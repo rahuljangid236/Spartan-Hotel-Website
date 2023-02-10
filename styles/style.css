@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Muli, sans-serif;
+  font-size: 14px;
+}
+.container {
+  width: 100%;
+}
+/* Top Strip */
+.headerTopStrip {
+  height: 35px;
+  background-color: #71312e;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+.headerTopStrip a {
+  text-decoration: none;
+  color: white;
+}
+.covid19-strip .topStrip-details {
+  padding-left: 20px;
+}
+.covid19-strip .topStrip-details-2 {
+  padding-left: 40px;
+}
+.header_top_contact {
+}
+
+/* NavBar */
+.navbar {
+  height: 72px;
+  background-color: rgba(255, 255, 255, 0.8);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 100px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.brand-name img {
+  max-height: 65px;
+  max-width: 200px;
+}
+.nav-menu {
+  width: 70%;
+  margin-left: 100px;
+}
+.nav-menu ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.nav-menu ul li a {
+  text-decoration: none;
+  color: #272727;
+  font-size: 15px;
+  font-weight: 500;
+}
+nav li a:hover {
+  color: #be863c;
+}
+.book-now {
+  margin-left: 70px;
+}
+.book-now button {
+  background-color: #be863c;
+  font-size: 1em;
+  color: #fff;
+  min-width: 175px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0;
+  line-height: 40px;
+}
+
+/* DIV Space */
+.space {
+  height: 500px;
+  background-color: #84be3c;
+}
+/* Footer */
+footer {
+  background: url(/images/footer.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  width: 85vw;
+  padding: 30px 6.9vw;
+  color: #71302d;
+}
+.footer-head {
+  display: flex;
+  align-items: flex-start;
+}
+.hotel-name {
+  width: 300px;
+}
+.footer-head img {
+  max-height: 205px;
+  max-width: 200px;
+}
+.email-anchorlink {
+  text-decoration: none;
+  color: #71302d;
+}
+.social-links {
+  display: flex;
+}
+.social-links div {
+  margin-top: 30px;
+  margin-right: 20px;
+}
+.social-links div a {
+  color: #71302d;
+}
+.social-links div a i {
+  font-size: 25px;
+}
+.hotel-city {
+  padding: 0 50px;
+  margin-left: 80px;
+}
+.hotel-city ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding-top: 120px;
+}
+.hotel-city ul a {
+  text-decoration: none;
+  padding-right: 18px;
+  padding-top: 12px;
+  color: #71302d;
+  font-weight: bold;
+}
+.hotel-city ul a:hover {
+  color: #be863c;
+}
+hr {
+  margin-top: 40px;
+  margin-left: -40px;
+  width: 90vw;
+}
+.footer-foot .footer-foot-menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* text-align: center; */
+  line-height: 2.2;
+  padding-top: 25px;
+}
+.footer-foot .footer-foot-menu ul a {
+  text-decoration: none;
+  color: #71302d;
+  padding-right: 25px;
+  font-size: 20px;
+}
+.footer-foot .footer-foot-menu ul a li {
+  list-style-type: none;
+}
+.copywrite ul {
+  display: flex;
+  justify-content: center;
+  padding-top: 22px;
+  font-weight: bold;
+}
+.copywrite ul a {
+  text-decoration: none;
+  padding-right: 20px;
+  color: #71302d;
+}
+.copywrite ul a li {
+  list-style-type: none;
+}
