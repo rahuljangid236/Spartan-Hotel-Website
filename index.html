@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- <meta http-equiv="refresh" content="8" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- OwlCarousal -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+
     <link rel="stylesheet" href="styles/style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Muli:300,400,700"
@@ -212,6 +220,91 @@
           <img src="/images/Pride-Brand-27.avif" alt="" />
         </div>
       </div>
+
+      <!-- Content 4 -->
+      <div class="content-4">
+        <div class="content">
+          <h2 style="text-align: center">
+            SPARTAN <span>BUSINESS HOTELS</span>
+          </h2>
+          <p>
+            Spartan Hotels Group offer a range of personalized services that
+            keep the modern business traveller content and relaxed. A perfect
+            blend of comfort and convenience await the guests in our
+            aesthetically pleasing rooms, thereby ensuring that our guests
+            experience the ultimate relaxation and comfort. Our business hotels
+            are located in prime locations and are in close proximity to various
+            travel hubs and tourist destinations.
+          </p>
+        </div>
+        <!-- Slider -->
+        <div class="slider owl-carousel">
+          <div class="card">
+            <div class="img">
+              <img src="/images/city-slider/kolkata.avif" alt="" />
+            </div>
+            <div class="content">
+              <div class="title">KOLKATA</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="/images/city-slider/pune.avif" alt="" />
+            </div>
+            <div class="content">
+              <div class="title">PUNE</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="/images/city-slider/nagpur.avif" alt="" />
+            </div>
+            <div class="content">
+              <div class="title">NAGPUR</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="/images/city-slider/delhi.avif" alt="" />
+            </div>
+            <div class="content">
+              <div class="title">NEW DELHI</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="/images/city-slider/chenai.avif" alt="" />
+            </div>
+            <div class="content">
+              <div class="title">CHENNAI</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="/images/city-slider/indore.avif" alt="" />
+            </div>
+            <div class="content">
+              <div class="title">INDORE</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="/images/city-slider/bang.avif" alt="" />
+            </div>
+            <div class="content">
+              <div class="title">BANGALORE</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="/images/city-slider/Ahmedabad.avif" alt="" />
+            </div>
+            <div class="content">
+              <div class="title">AHMEDABAD</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Footer -->
@@ -332,6 +425,16 @@
     </footer>
 
     <!-- Script -->
+    <!-- Script Slider City -->
+    <script>
+      $(".slider").owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000, //2000ms = 2s;
+        autoplayHoverPause: true,
+      });
+    </script>
+
     <script src="/js/script.js"></script>
   </body>
 </html>
