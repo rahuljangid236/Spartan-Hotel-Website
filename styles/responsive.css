@@ -240,4 +240,12 @@
   .content-4 .slider .card {
     margin: 0 8px;
   }
+  /* footer */
+  .hotel-name {
+    width: 100%;
+    justify-content: center;
+  }
+  .hotel-city {
+    display: none;
+  }
 }
