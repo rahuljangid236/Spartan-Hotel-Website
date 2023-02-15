@@ -5,6 +5,12 @@
   font-size: 14px;
   box-sizing: border-box;
 }
+html {
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+}
 .container {
   width: 100%;
 }
@@ -28,7 +34,6 @@
 .covid19-strip .topStrip-details-2 {
   padding-left: 40px;
 }
-
 /* NavBar */
 .navbar {
   height: 72px;
@@ -49,13 +54,18 @@
   max-width: 200px;
 }
 .nav-menu {
-  width: 70%;
+  width: 90%;
   margin-left: 100px;
 }
 .nav-menu ul {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   list-style-type: none;
+}
+.navbar-link:link,
+.navbar-link:visited {
+  display: inline-block;
 }
 .nav-menu ul li a {
   text-decoration: none;
@@ -67,7 +77,7 @@ nav li a:hover {
   color: #be863c;
 }
 .book-now {
-  margin-left: 70px;
+  margin-left: 40px;
 }
 .book-now button {
   background-color: #be863c;
@@ -79,12 +89,26 @@ nav li a:hover {
   border: 0;
   line-height: 40px;
 }
+/* Mobile Screen Button */
+.mobile-navbar-btn {
+  display: flex;
+  background: transparent;
+  cursor: pointer;
+  display: none;
+}
+.mobile-navbar-btn [name="close-outline"] {
+  display: none;
+}
+.mobile-nav-icon {
+  width: 3rem;
+  height: 3rem;
+}
 
 /* DIV Space */
-.space {
+/* .space {
   height: 500px;
   background-color: #84be3c;
-}
+} */
 /* Footer */
 footer {
   /* background: url(/images/footer.jpg); */
@@ -292,6 +316,9 @@ hr {
 .main-content-wrapper .content-1 {
   margin: 0 122.125px;
 }
+.main-content-wrapper .content-1 div p {
+  font-size: 16px;
+}
 .main-content-wrapper .content-1 h1 span {
   font-size: 2.3em;
   font-weight: 700;
@@ -387,4 +414,35 @@ hr {
   font-weight: 700;
   color: #be863c;
   text-align: center;
+}
+
+/* About Page-About Pride Hotel */
+.menu-about {
+  width: 100%;
+  padding: 131px 0 30px;
+  background-color: #f4efec;
+}
+.menu-about ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.menu-about ul a {
+  text-decoration: none;
+  color: #be863c;
+  font-weight: bold;
+}
+
+.menu-about ul a li {
+  list-style-type: none;
+}
+
+.head-content-about {
+  width: 100%;
+  height: 426px;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
