@@ -234,4 +234,10 @@
     padding-top: 10px;
     padding-bottom: 10px;
   }
+  .content-4 .slider {
+    padding-top: 12px;
+  }
+  .content-4 .slider .card {
+    margin: 0 8px;
+  }
 }
