@@ -226,4 +226,12 @@
     max-width: 100%;
     padding-right: 0;
   }
+  /* Slider */
+  .content-4 .card .content .title {
+    font-size: 9px;
+  }
+  .content-4 .slider .card .content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
