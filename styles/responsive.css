@@ -1,4 +1,4 @@
-@media screen and (min-width: 481px) and (max-width: 780px) {
+@media screen and (min-width: 481px) and (max-width: 1275px) {
   /* Index.html Page */
   /* Header strip */
   .headerTopStrip span,
@@ -7,7 +7,7 @@
     font-size: 12px;
   }
   /* Navbar */
-  .navbar {
+  .navbar1 {
     justify-content: space-between;
     padding: 0 50px;
   }
@@ -21,7 +21,7 @@
     z-index: 999;
     color: #272727;
   }
-  .navbar {
+  .navbar1 {
     position: relative;
   }
   .nav-menu {
@@ -77,7 +77,7 @@
     display: none;
   }
   /* Navbar */
-  .navbar {
+  .navbar1 {
     justify-content: space-between;
     padding: 0 20px;
     height: 55px;
@@ -102,7 +102,7 @@
     z-index: 999;
     color: #272727;
   }
-  .navbar {
+  .navbar1 {
     position: relative;
   }
   .nav-menu {

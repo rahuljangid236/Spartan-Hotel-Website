@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta http-equiv="refresh" content="8" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- OwlCarousal -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:300,400,700"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="styles/fontawesome-free-6.3.0-web/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Book Now</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <main class="container1" style="z-index: 999 !important">
+      <!-- Header Section -->
+      <header>
+        <div class="">
+          <!-- Sticky Removed -->
+          <!-- Header Top Strip -->
+          <div class="headerTopStrip">
+            <span class="covid19-strip">
+              <span class="topStrip-text">Travel Information: </span>
+              <a class="topStrip-details" href="#" target="_blank">
+                COVID-19 Update
+                <span class="topStrip-newtab">
+                  <i class="fa fa-external-link-alt"></i>
+                </span>
+              </a>
+              <a class="topStrip-details-2" href="#" target="_blank">
+                Pride Safety Assurance
+                <span class="topStrip-newtab">
+                  <i class="fa fa-external-link-alt"></i>
+                </span>
+              </a>
+            </span>
+            <div class="header_top_contact">
+              <a href="tel: 1800 209 1400" class="call">
+                <i class="fa fa-phone"></i>
+                Toll Free Number: 1800 209 1400
+              </a>
+            </div>
+          </div>
+
+          <!-- NavBar -->
+          <nav class="navbar1" id="navbar">
+            <div class="brand-name">
+              <a href="index.html">
+                <img src="images/logo.png" alt="Spartan Hotels & Group" />
+              </a>
+            </div>
+            <div class="nav-menu">
+              <ul class="navbar-list">
+                <li><a class="navbar-link" href="index.html">Home</a></li>
+                <li><a class="navbar-link" href="#">Offers</a></li>
+                <li><a class="navbar-link" href="#">Plan Your Events</a></li>
+                <li><a class="navbar-link" href="#">Dining</a></li>
+                <li><a class="navbar-link" href="#">Media & News</a></li>
+                <li><a class="navbar-link" href="#">Partner With Us</a></li>
+                <li>
+                  <a class="navbar-link" href="about.html">About Us</a>
+                </li>
+                <li><a class="navbar-link" href="#">Contact Us</a></li>
+                <li>
+                  <!-- <div class="book-now">
+                    <button>BOOK NOW</button>
+                  </div> -->
+                </li>
+              </ul>
+            </div>
+            <div class="mobile-navbar-btn">
+              <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+              <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+            </div>
+            <!-- <div class="book-now">
+                <button>BOOK NOW</button>
+              </div> -->
+          </nav>
+        </div>
+      </header>
+    </main>
+
+    <!-- Booking Form -->
+
+    <div class="container">
+      <div class="py-5 text-center">
+        <h1 style="color: #71312e; font-weight: 700">Booking & Contact</h1>
+        <p class="lead">
+          Please fill all the details according to your requirement.
+        </p>
+      </div>
+
+      <div class="row" style="z-index: -100">
+        <div class="col-md-4 order-md-2 mb-4">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-muted">Your cart</span>
+            <span class="badge badge-secondary badge-pill">3</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li
+              class="list-group-item d-flex justify-content-between lh-condensed"
+            >
+              <div>
+                <h6 class="my-0">Room Charges</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">$12</span>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between lh-condensed"
+            >
+              <div>
+                <h6 class="my-0">Londry charges</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">$8</span>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between lh-condensed"
+            >
+              <div>
+                <h6 class="my-0">GST</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">$5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-light">
+              <div class="text-success">
+                <h6 class="my-0">Promo code</h6>
+                <small>EXAMPLECODE</small>
+              </div>
+              <span class="text-success">-$5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total (USD)</span>
+              <strong>$20</strong>
+            </li>
+          </ul>
+
+          <form class="card p-2">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Promo code"
+              />
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-secondary">Redeem</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">Billing address</h4>
+          <form class="needs-validation" novalidate>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName">First name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  placeholder=""
+                  value=""
+                  required
+                />
+                <div class="invalid-feedback">First name is required.</div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="lastName">Last name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  placeholder=""
+                  value=""
+                  required
+                />
+                <div class="invalid-feedback">Last name is required.</div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="username">Username</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">@</span>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="username"
+                  placeholder="Username"
+                  required
+                />
+                <div class="invalid-feedback" style="width: 100%">
+                  Your username is required.
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email"
+                >Email <span class="text-muted">(Optional)</span></label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="you@example.com"
+              />
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address">Address</label>
+              <input
+                type="text"
+                class="form-control"
+                id="address"
+                placeholder="1234 Main Street"
+                required
+              />
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address2"
+                >Address 2 <span class="text-muted">(Optional)</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="address2"
+                placeholder="Apartment or suite"
+              />
+            </div>
+
+            <div class="row">
+              <div class="col-md-5 mb-3">
+                <label for="country">Country</label>
+                <select
+                  class="custom-select d-block w-100"
+                  id="country"
+                  required
+                >
+                  <option value="">Choose...</option>
+                  <option>India</option>
+                  <option>United States</option>
+                  <option>UK</option>
+                  <option>China</option>
+                  <option>Japan</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid country.
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="state">State</label>
+                <select class="custom-select d-block w-100" id="state" required>
+                  <option value="">Choose...</option>
+                  <option>California</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="zip">Zip</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="zip"
+                  placeholder=""
+                  required
+                />
+                <div class="invalid-feedback">Zip code required.</div>
+              </div>
+            </div>
+            <hr class="mb-4" />
+            <h4 class="mb-3">Details</h4>
+            <div class="form-group">
+              <div class="row">
+                <div class="col-sm-6 md-3">
+                  <label for="arrive">Arrive</label>
+                  <input
+                    type="date"
+                    id="arrive"
+                    class="form-control"
+                    name="arrive"
+                  />
+                </div>
+                <div class="col-sm-6 md-3">
+                  <label for="depart">Depart</label>
+                  <input
+                    type="date"
+                    id="depart"
+                    class="form-control"
+                    name="depart"
+                  />
+                </div>
+              </div>
+              <br />
+              <div class="row">
+                <div class="col-md-3 mb-3">
+                  <label for="country">People</label>
+                  <select
+                    class="custom-select d-block w-100"
+                    id="country"
+                    required
+                  >
+                    <option value="">Choose...</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid country.
+                  </div>
+                </div>
+                <div class="col-md-5 mb-3">
+                  <label for="state">Bathroom</label>
+                  <select
+                    class="custom-select d-block w-100"
+                    id="state"
+                    required
+                  >
+                    <option value="">Choose...</option>
+                    <option>With Bathroom</option>
+                    <option>Without Bathroom</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please provide a valid state.
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="state">Bedding</label>
+                  <select
+                    class="custom-select d-block w-100"
+                    id="state"
+                    required
+                  >
+                    <option value="single-bed">Single Bed</option>
+                    <option value="double-bed">Double Bed</option>
+                    <option value="Honeymoon-bed" selected>
+                      Honeymoon Bed
+                    </option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please provide a valid state.
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <label for="state"
+                    >Please describe your needs e.g. Extra beds, children's
+                    cots</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="textAreaExample1"
+                    rows="4"
+                  ></textarea>
+                  <label
+                    class="form-label"
+                    for="textAreaExample"
+                    placeholder="Enter your needs"
+                  ></label>
+                </div>
+              </div>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="save-info"
+              />
+              <label class="custom-control-label" for="save-info"
+                >Save this information for next time</label
+              >
+            </div>
+            <hr class="mb-4" />
+            <h4 class="mb-3">Payment</h4>
+
+            <div class="d-block my-3">
+              <div class="custom-control custom-radio">
+                <input
+                  id="credit"
+                  name="paymentMethod"
+                  type="radio"
+                  class="custom-control-input"
+                  checked
+                  required
+                />
+                <label class="custom-control-label" for="credit"
+                  >Credit card</label
+                >
+              </div>
+              <div class="custom-control custom-radio">
+                <input
+                  id="debit"
+                  name="paymentMethod"
+                  type="radio"
+                  class="custom-control-input"
+                  required
+                />
+                <label class="custom-control-label" for="debit"
+                  >Debit card</label
+                >
+              </div>
+              <div class="custom-control custom-radio">
+                <input
+                  id="paypal"
+                  name="paymentMethod"
+                  type="radio"
+                  class="custom-control-input"
+                  required
+                />
+                <label class="custom-control-label" for="paypal">PayPal</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="cc-name">Name on card</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="cc-name"
+                  placeholder=""
+                  required
+                />
+                <small class="text-muted">Full name as displayed on card</small>
+                <div class="invalid-feedback">Name on card is required</div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="cc-number">Credit card number</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="cc-number"
+                  placeholder=""
+                  required
+                />
+                <div class="invalid-feedback">
+                  Credit card number is required
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <label for="cc-expiration">Expiration</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="cc-expiration"
+                  placeholder=""
+                  required
+                />
+                <div class="invalid-feedback">Expiration date required</div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="cc-cvv">CVV</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="cc-cvv"
+                  placeholder=""
+                  required
+                />
+                <div class="invalid-feedback">Security code required</div>
+              </div>
+            </div>
+            <hr class="mb-4" />
+            <button class="btn btn-primary btn-lg btn-block" type="submit">
+              Continue to checkout
+            </button>
+          </form>
+        </div>
+      </div>
+      <br /><br /><br /><br />
+    </div>
+    <!-- Footer -->
+    <footer style="background: url(images/footer.jpg)">
+      <div class="footer-head">
+        <div class="hotel-name">
+          <a href="#">
+            <img src="images/logo.png" alt="Spartan Hotels & Group" />
+          </a>
+          <p style="font-weight: bold">SPARTAN HOTELS LIMITED</p>
+          <br />
+          <p style="line-height: 1.5">
+            THE RUBY, 5TH FLOOR, OFFICE NO.5 SC, <br />SOUTH WING ON LEVEL 8TH,
+            SENAPATI<br />
+            BAPAT MARG, MUMBAI – 400 028
+          </p>
+          <a
+            href="mailto:centralreservations@pridehotel.com"
+            target="_top"
+            class="email-anchorlink"
+            ><br />
+            EMAIL: centralreservations@spartanhotel.com
+          </a>
+          <div class="social-links">
+            <div class="custom-fb">
+              <a
+                class="facebook"
+                href="https://www.facebook.com/ThePrideHotels/"
+                title="Facebook"
+                ><i class="fab fa-facebook-square"></i
+              ></a>
+            </div>
+            <div class="instagram">
+              <a
+                class="instagram"
+                href="https://www.instagram.com/thepridehotels/?igshid=1ejp7g2rdcxnu"
+                title="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+            <div class="custom-li">
+              <a
+                class="social-lin"
+                href="https://www.linkedin.com/company/31500086"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+            <div class="youtube">
+              <a
+                class="youtube"
+                href="https://www.youtube.com/channel/UC6r0wKx1ulfddszRjGD1uGA/videos"
+                target="_blank"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="hotel-city">
+          <ul>
+            <a href="#"><li>AHMEDABAD |</li></a>
+            <a href="#"><li>ALKAPURI |</li></a>
+            <a href="#"><li>BANGALORE |</li></a>
+            <a href="#"><li>BHARATPUR |</li></a>
+            <a href="#"><li>BHOPAL |</li></a>
+            <a href="#"><li>CHENNAI |</li></a>
+            <a href="#"><li>GANGTOK |</li></a>
+            <a href="#"><li>GOA |</li></a>
+            <a href="#"><li>HALDWANI |</li></a>
+            <a href="#"><li>INDORE |</li></a>
+            <a href="#"><li>JAIPUR |</li></a>
+            <a href="#"><li>KOLKATA |</li></a>
+            <a href="#"><li>MANJUSAR |</li></a>
+            <a href="#"><li>MUSSOORIE |</li></a>
+            <a href="#"><li>NAGPUR |</li></a>
+            <a href="#"><li>NEW DELHI |</li></a>
+            <a href="#"><li>PUNE |</li></a>
+            <a href="#"><li>PURI |</li></a>
+            <a href="#"><li>RANAKPUR |</li></a>
+            <a href="#"><li>SASAN GIR |</li></a>
+            <a href="#"><li>UDAIPUR</li></a>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-foot">
+        <div class="footer-foot-menu">
+          <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="about.html"><li>About Us</li></a>
+            <a href="#"><li>Opening Soon</li></a>
+            <a href="#"><li>Dining</li></a>
+            <a href="#"><li>Plan Your Events</li></a>
+            <a href="#"><li>Weddings</li></a>
+            <a href="#"><li>Why Book Direct</li></a>
+            <a href="#"><li>Partner With Us</li></a>
+            <a href="#"><li>Careers</li></a>
+            <a href="#"><li>Media & News</li></a>
+            <a href="#"><li>Contact Us</li></a>
+            <a href="#"><li>Co Working & Corporate Spaces</li></a>
+            <a href="#"><li>Holiday Bonds</li></a>
+            <a href="#"><li>Pride Mart</li></a>
+            <a href="#"><li>Facility Management</li></a>
+            <a href="#"><li>Digital Weddings</li></a>
+            <a href="#"><li>Manage Booking</li></a>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="copywrite">
+        <ul>
+          <a href="#"><li>© 2023 Spartan Hotels & Resorts</li></a>
+          <a href="#"><li>Terms & Conditions</li></a>
+          <a href="#"><li>Privacy Policy</li></a>
+          <a href="#"><li>Grievance Redressal</li></a>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Script -->
+    <!-- Script Slider City -->
+
+    <script src="js/script.js"></script>
+    <!-- Mobile Toggler Btn -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Bootstrap core JavaScript
+          ================================================== -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        "use strict";
+
+        window.addEventListener(
+          "load",
+          function () {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName("needs-validation");
+
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(
+              forms,
+              function (form) {
+                form.addEventListener(
+                  "submit",
+                  function (event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add("was-validated");
+                  },
+                  false
+                );
+              }
+            );
+          },
+          false
+        );
+      })();
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
