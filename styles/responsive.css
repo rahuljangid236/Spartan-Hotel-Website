@@ -256,4 +256,21 @@
   .head-content-about h1 {
     font-size: 1.5em;
   }
+  .head-content-about-main {
+    margin: 25px 40.425px;
+  }
+  .head-content-about-main .about-content-2 h2 {
+    font-size: 1.5em;
+    margin: 25px 0;
+  }
+  .head-content-about-main .about-content-2 .about-content-main {
+    flex-direction: column;
+  }
+  .head-content-about-main .about-content-2 .about-content-main .image img {
+    margin-top: 15px;
+    width: 335px;
+  }
+  .head-content-about-main .about-content-2 .about-content-main .content {
+    margin-right: 0;
+  }
 }
