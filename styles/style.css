@@ -417,7 +417,7 @@ hr {
 }
 
 /* About Page-About Pride Hotel */
-.menu-about {
+/* .menu-about {
   width: 100%;
   padding: 131px 0 30px;
   background-color: #f4efec;
@@ -436,7 +436,7 @@ hr {
 
 .menu-about ul a li {
   list-style-type: none;
-}
+} */
 
 .head-content-about {
   width: 100%;
@@ -445,4 +445,37 @@ hr {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.head-content-about h1 {
+  color: #ffffff;
+  font-size: 2.3em;
+  padding-top: 200px;
+  text-align: center;
+}
+.head-content-about-main {
+  margin: 50px 108.425px;
+  line-height: 2em;
+  text-align: justify;
+  font-size: 14px;
+}
+.head-content-about-main .about-content-1 p span {
+  color: #be863c;
+}
+.head-content-about-main .about-content-2 h2 {
+  font-size: 2em;
+  font-weight: 700;
+  color: #be863c;
+  margin: 45px auto;
+  text-align: center;
+}
+.head-content-about-main .about-content-2 .about-content-main {
+  display: flex;
+}
+.head-content-about-main .about-content-2 .about-content-main .content {
+  margin-right: 25px;
+}
+.head-content-about-main .about-content-2 .about-content-main .image img {
+  width: 455px;
+  height: auto;
+  border-radius: 5px;
 }

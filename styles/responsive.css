@@ -248,4 +248,12 @@
   .hotel-city {
     display: none;
   }
+
+  /* About Page */
+  .head-content-about {
+    height: 400px;
+  }
+  .head-content-about h1 {
+    font-size: 1.5em;
+  }
 }

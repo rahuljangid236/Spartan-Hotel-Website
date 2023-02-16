@@ -1,3 +1,12 @@
+// Menu Toggler
+
+const mobile_nav = document.querySelector(".mobile-navbar-btn");
+const nav_header = document.getElementById("navbar");
+const toggleNavbar = () => {
+  nav_header.classList.toggle("active");
+};
+mobile_nav.addEventListener("click", () => toggleNavbar());
+
 // Main Slider
 let slideIndex = 0;
 showSlides();
@@ -20,12 +29,3 @@ function showSlides() {
   dots[slideIndex - 1].className += " active1";
   setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
-
-// Menu Toggler
-
-const mobile_nav = document.querySelector(".mobile-navbar-btn");
-const nav_header = document.getElementById("navbar");
-const toggleNavbar = () => {
-  nav_header.classList.toggle("active");
-};
-mobile_nav.addEventListener("click", () => toggleNavbar());
