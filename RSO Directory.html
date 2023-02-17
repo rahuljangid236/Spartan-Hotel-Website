@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta http-equiv="refresh" content="8" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- OwlCarousal -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:300,400,700"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="styles/fontawesome-free-6.3.0-web/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+
+    <script
+      src="https://kit.fontawesome.com/beba131c97.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Regional Office Directory</title>
+    <style>
+      .nav {
+        height: 70px;
+        background-color: rgb(250, 245, 246);
+      }
+      .nav ul {
+        display: flex;
+
+        justify-content: center;
+      }
+      .nav ul li {
+        list-style: none;
+
+        padding: 30px;
+        padding-top: 10px;
+      }
+
+      .nav ul li a {
+        text-decoration: none;
+        color: #be863c;
+      }
+      li a::after {
+        content: "";
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+
+        margin-top: 10px;
+        background-color: #be863c;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+      }
+      li a:hover::after {
+        transform: scaleX(1.5);
+      }
+      h1 {
+        width: 100%;
+        color: #be863c;
+        text-align: center;
+        padding: 50px;
+        font-family: muli, sans-serif;
+      }
+
+      .grid_img {
+        width: 100%;
+        height: auto;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: center;
+      }
+      .grid_img > .description img {
+        height: 180px;
+        width: 310px;
+        border-radius: 5px;
+        margin: 12px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+      }
+      img:hover {
+        opacity: 0.5s;
+        filter: brightness(40%);
+      }
+      .grid_img > .description p {
+        font-weight: 320;
+        height: auto;
+        width: 310px;
+        text-align: center;
+        margin-top: 25px;
+        line-height: 2em;
+        font-weight: 150;
+        font-size: 15px;
+        color: rgb(98, 96, 96);
+      }
+      a {
+        color: #be863c;
+        text-decoration: none;
+      }
+      .grid_img > .main img {
+        margin-top: 50px;
+        height: 700px;
+        width: 1100px;
+        border-radius: 5px;
+        justify-content: center;
+      }
+      .grid_img > .main p {
+        height: auto;
+        width: 1100px;
+        text-align: center;
+        margin-top: 25px;
+        line-height: 2em;
+        font-weight: 150;
+        font-size: 15px;
+        color: rgb(98, 96, 96);
+      }
+      .grid_img > .main_content img {
+        height: 300px;
+        width: 550px;
+        border-radius: 5px;
+        margin: 12px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+      }
+      .grid_img > .main_content p {
+        height: auto;
+        width: 550px;
+        font-weight: 150;
+        text-align: center;
+        margin-top: 25px;
+        line-height: 2em;
+        font-size: 15px;
+        color: rgb(98, 96, 96);
+      }
+
+      p {
+        text-align: center;
+        font-weight: 700;
+        color: rgb(72, 70, 70);
+      }
+      select {
+        height: 38px;
+        width: 520px;
+        border-radius: 5px;
+
+        border: 1px solid rgb(193, 190, 190);
+        margin-top: 17px;
+        float: right;
+      }
+      textarea {
+        height: 110px;
+        width: 520px;
+        border-radius: 5px;
+        border-color: rgb(193, 190, 190);
+        margin-top: 17px;
+        float: right;
+      }
+      .submit {
+        width: 520px;
+        border-radius: 5px;
+        border-color: #be863c;
+
+        float: right;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        margin-top: 17px;
+        background-color: #be863c;
+        color: white;
+      }
+      .btn {
+        border-radius: 5px;
+        border-color: #be863c;
+
+        padding: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        float: right;
+        margin-right: 120px;
+        margin-top: 50px;
+        background-color: #be863c;
+        color: white;
+      }
+      .btn:hover {
+        background-color: #b77a2a;
+      }
+      .submit:hover {
+        background-color: #b77a2a;
+      }
+      .form_input {
+        margin-top: 20px;
+      }
+      .form_input label {
+        float: left;
+        margin-top: 30px;
+      }
+      .form_input input {
+        height: 30px;
+        float: right;
+        margin-top: 13px;
+        padding: 18px;
+        width: 520px;
+        border-radius: 5px;
+        color: gray;
+        border: 1px solid rgb(193, 190, 190);
+      }
+      .main_container {
+        text-align: center;
+        padding: 40px;
+      }
+      .main {
+        margin-top: 30px;
+      }
+      form {
+        max-width: 700px;
+        height: 470px;
+        margin-left: 90px;
+      }
+
+      .grid_img > .address {
+        height: 200px;
+        width: 300px;
+        border-radius: 5px;
+        margin: 40px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        text-align: center;
+        line-height: 2em;
+        font-weight: 150;
+        font-size: 15px;
+        color: rgb(98, 96, 96);
+        font-family: Muli, sans-serif !important;
+      }
+      /* Extra small devices (phones, 600px and down) */
+      @media only screen and (max-width: 600px) {
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        .nav {
+          height: 90px;
+        }
+        .nav ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: left;
+          text-align: center;
+        }
+        .nav ul li {
+          padding-left: 10px;
+          padding-top: 5px;
+        }
+      }
+
+      /* Small devices (portrait tablets and large phones, 600px and up) */
+      @media only screen and (min-width: 600px) {
+      }
+
+      /* Medium devices (landscape tablets, 768px and up) */
+      @media only screen and (min-width: 768px) {
+      }
+
+      /* Large devices (laptops/desktops, 992px and up) */
+      @media only screen and (min-width: 992px) {
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container1">
+      <!-- Header Section -->
+      <header>
+        <div class="sticky">
+          <!-- Header Top Strip -->
+          <div class="headerTopStrip">
+            <span class="covid19-strip">
+              <span class="topStrip-text">Travel Information: </span>
+              <a class="topStrip-details" href="#" target="_blank">
+                COVID-19 Update
+                <span class="topStrip-newtab">
+                  <i class="fa fa-external-link-alt"></i>
+                </span>
+              </a>
+              <a class="topStrip-details-2" href="#" target="_blank">
+                Pride Safety Assurance
+                <span class="topStrip-newtab">
+                  <i class="fa fa-external-link-alt"></i>
+                </span>
+              </a>
+            </span>
+            <div class="header_top_contact">
+              <a href="tel: 1800 209 1400" class="call">
+                <i class="fa fa-phone"></i>
+                Toll Free Number: 1800 209 1400
+              </a>
+            </div>
+          </div>
+
+          <!-- NavBar -->
+          <nav class="navbar1" id="navbar">
+            <div class="brand-name">
+              <a href="index.html">
+                <img src="images/logo.png" alt="Spartan Hotels & Group" />
+              </a>
+            </div>
+            <div class="nav-menu">
+              <ul class="navbar-list">
+                <li><a class="navbar-link" href="index.html">Home</a></li>
+                <li><a class="navbar-link" href="#">Offers</a></li>
+                <li><a class="navbar-link" href="#">Plan Your Events</a></li>
+                <li><a class="navbar-link" href="Dining.html">Dining</a></li>
+                <li><a class="navbar-link" href="blog.html">Blog</a></li>
+                <li><a class="navbar-link" href="#">Partner With Us</a></li>
+                <li>
+                  <a class="navbar-link" href="about.html">About Us</a>
+                </li>
+                <li>
+                  <a class="navbar-link" href="Hotel Directory.html"
+                    >Contact Us</a
+                  >
+                </li>
+                <li>
+                  <div class="book-now">
+                    <a href="booking.html"><button>BOOK NOW</button></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="mobile-navbar-btn">
+              <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+              <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+            </div>
+            <!-- <div class="book-now">
+              <button>BOOK NOW</button>
+            </div> -->
+          </nav>
+        </div>
+      </header>
+    </main>
+    <!-- navigation bar -->
+    <div class="nav" style="margin-top: 120px">
+      <ul>
+        <li><a href="Hotel Directory.html">Hotel Directory</a></li>
+        <li><a href="Contact Us.html">Contact Us</a></li>
+        <li><a href="RSO Directory.html">RSO Directory</a></li>
+      </ul>
+    </div>
+    <hr />
+    <!-- navigation end -->
+    <h1 style="font-size: 2.3em">Regional Office Directory</h1>
+    <!-- first section -->
+    <div class="grid_img">
+      <div class="address">
+        <h4>Ahmedabad</h4>
+        <p>
+          Judges Bungalow Road, Off S. G. Road, Ahmedabad, Gujarat – 380054,
+          India
+        </p>
+        <p>P. +91 79 66115555, F. +91 79 3011 5566</p>
+        <p>
+          Email: <a href="#"><span>sales.ahmd@pridehotel.com</span></a>
+        </p>
+      </div>
+      <div class="address">
+        <h4>Bengaluru</h4>
+        <p>
+          93 Richmond Road, Bengaluru,<br />
+          Karnataka – 560025, India
+        </p>
+        <p>P. +91 80 4348 4348, F. +91 80 4348 4358</p>
+        <p>
+          Email: <a href="#"><span>sales.bglr@pridehotel.com</span></a>
+        </p>
+      </div>
+      <div class="address">
+        <h4>Chandigarh</h4>
+        <p>
+          Cabin No. 107, SCO 3033-3034, Executive Business Centre, First Floor,
+          Sector 22-D Chandigarh – 160022
+        </p>
+        <p>Tel: 9878861069</p>
+        <p>
+          Email: <a href="#"><span>rso.chandigarh@pridehotel.com</span></a>
+        </p>
+      </div>
+      <div class="address">
+        <h4>Chenai</h4>
+        <p>
+          216 E V R Periyar Salai, Poonamallee, High Road, Kilpauk, Chennai,
+          Tamil Nadu – 600010, India
+        </p>
+        <p>P. +91 44 4398 9898, F. +91 44 4398 9888</p>
+        <p>
+          Email: <a href="#"><span>sales.chennai@pridehotel.com</span></a>
+        </p>
+      </div>
+      <div class="address">
+        <h4>Aerocity New Delhi</h4>
+        <p>
+          5-A, Hospitality District, Aerocity, IGI Airport, New Delhi – 110037,
+          India
+        </p>
+        <p>
+          P. +91 11 6610 3536, +91 22 6134 4289, +91 11 7160 0700 F. +91 11 6600
+          7783
+        </p>
+        <p>
+          Email: <a href="#"><span>sales.delhi@pridehotel.com</span></a>
+        </p>
+      </div>
+      <div class="address">
+        <h4>Hyderabad</h4>
+        <p>
+          412, Amarchand Sharma Complex, S.D.Road, Secunderabad-500 003, Andhra
+          Pradesh.
+        </p>
+        <p>Tel: 9676620676</p>
+        <p>
+          Email: <a href="#"><span>salesmgr.hyd@pridehotel.com</span></a>
+        </p>
+      </div>
+      <div class="address">
+        <h4>Kolkata</h4>
+        <p>
+          Terminus, B.G-12, Action Area, 1-B, New Town, Rajarhat, Kolkata, West
+          Bengal – 700156, India
+        </p>
+        <p>P. +91 33 4025 9999, F. +91 33 4025 9900</p>
+        <p>
+          Email: <a href="#"><span>sales.kolkata@pridehotel.com</span></a>
+        </p>
+      </div>
+      <div class="address">
+        <h4>Mumbai</h4>
+        <p>
+          3rd Floor, 303, Acme Plaza, Andheri-Kurla Road, Andheri (East), Mumbai
+          – 400059, India
+        </p>
+        <p>P. +91 22 68415100, F. +91 22 4005 9301</p>
+        <p>
+          Email: <a href="#"><span>sales.mumbai@pridehotel.com</span></a>
+        </p>
+      </div>
+      <div class="address">
+        <h4>Pune</h4>
+        <p>
+          5 University Road, Shivaji Nagar, Pune, Maharashtra – 411005, India.
+        </p>
+        <p>P. +91 20 2553 4567, 2553 0444, 6647 1471, F. +91 20 25533228</p>
+        <p>
+          Email: <a href="#"><span>sales.pune@pridehotel.com</span></a>
+        </p>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer style="background: url(images/footer.jpg)">
+      <div class="footer-head">
+        <div class="hotel-name">
+          <a href="#">
+            <img src="images/logo.png" alt="Spartan Hotels & Group" />
+          </a>
+          <p style="font-weight: bold">SPARTAN HOTELS LIMITED</p>
+          <br />
+          <p style="line-height: 1.5">
+            THE RUBY, 5TH FLOOR, OFFICE NO.5 SC, <br />SOUTH WING ON LEVEL 8TH,
+            SENAPATI<br />
+            BAPAT MARG, MUMBAI – 400 028
+          </p>
+          <a
+            href="mailto:centralreservations@pridehotel.com"
+            target="_top"
+            class="email-anchorlink"
+            ><br />
+            EMAIL: centralreservations@spartanhotel.com
+          </a>
+          <div class="social-links">
+            <div class="custom-fb">
+              <a
+                class="facebook"
+                href="https://www.facebook.com/ThePrideHotels/"
+                title="Facebook"
+                ><i class="fab fa-facebook-square"></i
+              ></a>
+            </div>
+            <div class="instagram">
+              <a
+                class="instagram"
+                href="https://www.instagram.com/thepridehotels/?igshid=1ejp7g2rdcxnu"
+                title="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+            <div class="custom-li">
+              <a
+                class="social-lin"
+                href="https://www.linkedin.com/company/31500086"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+            <div class="youtube">
+              <a
+                class="youtube"
+                href="https://www.youtube.com/channel/UC6r0wKx1ulfddszRjGD1uGA/videos"
+                target="_blank"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="hotel-city">
+          <ul>
+            <a href="#"><li>AHMEDABAD |</li></a>
+            <a href="#"><li>ALKAPURI |</li></a>
+            <a href="#"><li>BANGALORE |</li></a>
+            <a href="#"><li>BHARATPUR |</li></a>
+            <a href="#"><li>BHOPAL |</li></a>
+            <a href="#"><li>CHENNAI |</li></a>
+            <a href="#"><li>GANGTOK |</li></a>
+            <a href="#"><li>GOA |</li></a>
+            <a href="#"><li>HALDWANI |</li></a>
+            <a href="#"><li>INDORE |</li></a>
+            <a href="#"><li>JAIPUR |</li></a>
+            <a href="#"><li>KOLKATA |</li></a>
+            <a href="#"><li>MANJUSAR |</li></a>
+            <a href="#"><li>MUSSOORIE |</li></a>
+            <a href="#"><li>NAGPUR |</li></a>
+            <a href="#"><li>NEW DELHI |</li></a>
+            <a href="#"><li>PUNE |</li></a>
+            <a href="#"><li>PURI |</li></a>
+            <a href="#"><li>RANAKPUR |</li></a>
+            <a href="#"><li>SASAN GIR |</li></a>
+            <a href="#"><li>UDAIPUR</li></a>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-foot">
+        <div class="footer-foot-menu">
+          <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="about.html"><li>About Us</li></a>
+            <a href="#"><li>Opening Soon</li></a>
+            <a href="#"><li>Dining</li></a>
+            <a href="#"><li>Plan Your Events</li></a>
+            <a href="#"><li>Weddings</li></a>
+            <a href="#"><li>Why Book Direct</li></a>
+            <a href="#"><li>Partner With Us</li></a>
+            <a href="#"><li>Careers</li></a>
+            <a href="#"><li>Media & News</li></a>
+            <a href="#"><li>Contact Us</li></a>
+            <a href="#"><li>Co Working & Corporate Spaces</li></a>
+            <a href="#"><li>Holiday Bonds</li></a>
+            <a href="#"><li>Pride Mart</li></a>
+            <a href="#"><li>Facility Management</li></a>
+            <a href="#"><li>Digital Weddings</li></a>
+            <a href="#"><li>Manage Booking</li></a>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="copywrite">
+        <ul>
+          <a href="#"><li>© 2023 Spartan Hotels & Resorts</li></a>
+          <a href="#"><li>Terms & Conditions</li></a>
+          <a href="#"><li>Privacy Policy</li></a>
+          <a href="#"><li>Grievance Redressal</li></a>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Script -->
+    <!-- Script Slider City -->
+    <script>
+      $(".slider").owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000, //2000ms = 2s;
+        autoplayHoverPause: true,
+      });
+    </script>
+
+    <script src="js/script.js"></script>
+    <!-- Mobile Toggler Btn -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
