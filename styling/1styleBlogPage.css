@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    min-height: 1px;
+    position: relative;
+    background-color: #f4efec;
+    border: 1px solid #cfb9ab;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.unordered-list {
+    text-align: center;
+    padding: 10px;
+    list-style: none;
+}
+  
+.list{
+    display: inline-block;
+    text-decoration: none;
+    color: #be863c !important;
+    background-color: transparent;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid #be863c;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 30px;
+    padding: 5px 20px;
+    margin: 10px;
+    font-style: italic;
+}
+
+.image-height {
+    width: 100% !important;
+    max-width: unset !important;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    padding: 30px 0;
+    height: 80vh;
+}
+
+.top {
+    position: relative;
+}
+
+.second {
+    position: absolute;
+    top: 37vh;
+    left: 4.5vw;
+    right: 4.5vw;
+    text-align: center;
+    align-items: center;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: Muli, sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 3px #241502;
+}
+
+.main-para {
+    padding-top: 10px;
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: Muli, sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    line-height: 2em;
+    color: #272727;
+}
+
+
+.lastPara{
+    text-align: center;
+}
+.image-setup{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    box-shadow: 2px 4px 6px #241502;
+}
+.parabeforeImage{
+    text-align: left;
+    padding-top: 40px;
+    /* padding-left: 30px; */
+    font-family: Muli,sans-serif;
+    line-height: 2em;
+    color: #272727; 
+    font-size: 14.5px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
