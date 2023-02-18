@@ -321,22 +321,24 @@
             <div class="form-group">
               <div class="row">
                 <div class="col-sm-6 md-3">
-                  <label for="arrive">Arrive</label>
+                  <label for="arrive">Arrive<pow style=color:red;>*</pow></label>
                   <input
                     type="date"
                     id="arrive"
                     class="form-control"
                     name="arrive"
                   />
+                  <div class="invalid-feedback">Arrive date required.</div>
                 </div>
                 <div class="col-sm-6 md-3">
-                  <label for="depart">Depart</label>
+                  <label for="depart">Depart<pow style=color:red;>*</pow></label>
                   <input
                     type="date"
                     id="depart"
                     class="form-control"
                     name="depart"
                   />
+                  <div class="invalid-feedback">Depart date required.</div>
                 </div>
               </div>
               <br />
