@@ -273,4 +273,20 @@
   .head-content-about-main .about-content-2 .about-content-main .content {
     margin-right: 0;
   }
+
+  /* Partner with us */
+  .content-partner-box {
+    flex-direction: column;
+  }
+  .head-partner-with-us h1 {
+    font-size: 1.1em;
+    margin: 25px 0;
+  }
+  .head-partner-with-us {
+    margin: 90px 22.125px !important;
+  }
+  .content-partner-content,
+  .content-partner-image {
+    width: 100%;
+  }
 }

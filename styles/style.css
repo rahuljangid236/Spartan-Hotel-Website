@@ -615,3 +615,35 @@ hr {
   max-width: 1340px;
   margin-bottom: 50px;
 }
+
+/* Partner with us */
+.head-partner-with-us h1 {
+  font-size: 2em;
+  font-weight: 700;
+  color: #be863c;
+  margin: 45px auto;
+  text-align: center;
+}
+
+.head-partner-with-us {
+  margin: 150px 108.425px;
+  line-height: 2em;
+  text-align: justify;
+  font-size: 14px;
+}
+.content-partner-box {
+  display: flex;
+}
+.content-partner-content {
+  width: 50%;
+  margin-right: 30px;
+}
+.content-partner-image {
+  width: 50%;
+}
+.content-partner-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 50px;
+}
