@@ -647,3 +647,17 @@ hr {
   border-radius: 5px;
   margin-top: 50px;
 }
+/* Plan your event */
+.plan-header {
+  font-size: 2em;
+  font-weight: 700;
+  color: #be863c;
+  margin: 45px auto;
+  text-align: center;
+}
+.plan-container {
+  margin: 30px 108.425px;
+  line-height: 2em;
+  text-align: justify;
+  font-size: 14px;
+}

@@ -289,4 +289,13 @@
   .content-partner-image {
     width: 100%;
   }
+
+  /* Plan */
+  .plan-container {
+    margin: 20px 22.125px !important;
+  }
+  .main-para {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
 }
