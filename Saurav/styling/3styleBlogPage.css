@@ -27,7 +27,7 @@
 .list{
     display: inline-block;
     text-decoration: none;
-    color: #be863c !important;
+    color: #be863c;
     background-color: transparent;
     border-top: 1px solid transparent;
     border-bottom: 1px solid #be863c;
@@ -40,12 +40,12 @@
 }
 
 .image-height {
-    width: 100% !important;
-    max-width: unset !important;
+    width: 100%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-clip: border-box;
+    max-width: unset;
     padding: 30px 0;
     height: 80vh;
 }
