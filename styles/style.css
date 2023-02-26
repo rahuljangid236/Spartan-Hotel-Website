@@ -481,7 +481,7 @@ hr {
 }
 
 /* Blog CSS- Sourav */
-.header-blog {
+/* .header-blog {
   min-height: 1px;
   position: relative;
   background-color: #f4efec;
@@ -489,8 +489,7 @@ hr {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  /* padding-left: 15px;
-    padding-right: 15px; */
+
   margin-left: 5px;
   margin-right: 5px;
   width: 100%;
@@ -509,8 +508,7 @@ hr {
   background-color: transparent;
   border-top: 1px solid transparent;
   border-bottom: 1px solid #be863c;
-  /* font-size: 16px;
-    font-weight: 400; */
+
   padding: 30px;
   padding: 5px 20px;
   margin: 10px;
@@ -553,8 +551,6 @@ hr {
   -webkit-font-smoothing: subpixel-antialiased;
   line-height: 2em;
   color: #272727;
-  /* -webkit-tap-highlight-color: transparent; */
-  /* -webkit-text-size-adjust: 100%; */
 }
 
 .lastPara {
@@ -566,7 +562,7 @@ hr {
   background-size: cover;
   height: 320px;
   width: 550px;
-  /* width: 40vw; */
+
   max-width: 100%;
   border-radius: 5px;
   margin-top: 40px;
@@ -594,7 +590,7 @@ hr {
   background-size: cover;
   height: 320px;
   width: 570px;
-  /* width: 40vw; */
+
   max-width: 100%;
   border-radius: 5px;
   margin-top: 40px;
@@ -614,7 +610,7 @@ hr {
   width: 100%;
   max-width: 1340px;
   margin-bottom: 50px;
-}
+} */
 
 /* Partner with us */
 .head-partner-with-us h1 {
