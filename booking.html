@@ -205,6 +205,7 @@
                   id="firstName"
                   placeholder=""
                   value=""
+                  maxlength="10"
                   required
                 />
                 <div class="invalid-feedback">First name is required.</div>
@@ -219,6 +220,7 @@
                   id="lastName"
                   placeholder=""
                   value=""
+                  maxlength="10"
                   required
                 />
                 <div class="invalid-feedback">Last name is required.</div>
@@ -238,6 +240,8 @@
                   class="form-control"
                   id="username"
                   placeholder="Username"
+                  minlength="4"
+                  maxlength="12"
                   required
                 />
                 <div class="invalid-feedback" style="width: 100%">
@@ -255,6 +259,7 @@
                 class="form-control"
                 id="email"
                 placeholder="you@example.com"
+                maxlength="20"
               />
               <div class="invalid-feedback">
                 Please enter a valid email address for shipping updates.
@@ -327,6 +332,7 @@
                   class="form-control"
                   id="zip"
                   placeholder=""
+                       maxlength="8"
                   required
                 />
                 <div class="invalid-feedback">Zip code required.</div>
@@ -497,6 +503,7 @@
                   type="text"
                   class="form-control"
                   id="cc-name"
+                       maxlength="12"
                   placeholder=""
                 />
                 <small class="text-muted">Full name as displayed on card</small>
@@ -511,6 +518,8 @@
                   class="form-control"
                   id="cc-number"
                   placeholder="XXXX-XXXX-XXXX-XXXX"
+                       maxlength="16"
+                       minlength="16"
                   required
                 />
                 <div class="invalid-feedback">
@@ -541,6 +550,8 @@
                   class="form-control"
                   id="cc-cvv"
                   placeholder="123"
+                       maxlength="3"
+                       minlength="3"
                   required
                 />
                 <div class="invalid-feedback">Security code required</div>
