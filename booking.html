@@ -514,11 +514,11 @@
                   >Credit card number<pow style="color: red">*</pow></label
                 >
                 <input
-                  type="number"
+                  type="tel"
                   class="form-control"
                   id="cc-number"
                   placeholder="XXXX-XXXX-XXXX-XXXX"
-                       min="16" max="16"
+                    maxlength="19"
                   required
                 />
                 <div class="invalid-feedback">
@@ -545,11 +545,11 @@
               <div class="col-md-3 mb-3">
                 <label for="cc-cvv">CVV<pow style="color: red">*</pow></label>
                 <input
-                  type="number"
+                  type="tel"
                   class="form-control"
                   id="cc-cvv"
                   placeholder="123"
-              min="3" max="3"
+               maxlength="3"
                   required
                 />
                 <div class="invalid-feedback">Security code required</div>
