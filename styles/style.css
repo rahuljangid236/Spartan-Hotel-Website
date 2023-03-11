@@ -103,15 +103,8 @@ nav li a:hover {
   width: 3rem;
   height: 3rem;
 }
-
-/* DIV Space */
-/* .space {
-  height: 500px;
-  background-color: #84be3c;
-} */
 /* Footer */
 footer {
-  /* background: url(/images/footer.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -224,7 +217,6 @@ hr {
 .dot {
   height: 15px;
   width: 15px;
-  /* margin-top: -20px; */
   background-color: white;
   border-radius: 50%;
   display: inline-block;
@@ -247,11 +239,9 @@ hr {
 @keyframes fade {
   from {
     opacity: 0.4;
-    /* margin-left: -100%; */
   }
   to {
     opacity: 1;
-    /* margin-left: 0%; */
   }
 }
 
@@ -383,7 +373,6 @@ hr {
 .content-4 .slider {
   display: flex;
   background-color: #f9f5ec;
-  /* padding: 30px 0; */
   margin-top: 30px;
   padding-top: 30px;
   max-width: 1340px;
@@ -415,29 +404,6 @@ hr {
   color: #be863c;
   text-align: center;
 }
-
-/* About Page-About Pride Hotel */
-/* .menu-about {
-  width: 100%;
-  padding: 131px 0 30px;
-  background-color: #f4efec;
-}
-.menu-about ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-}
-.menu-about ul a {
-  text-decoration: none;
-  color: #be863c;
-  font-weight: bold;
-}
-
-.menu-about ul a li {
-  list-style-type: none;
-} */
-
 .head-content-about {
   width: 100%;
   height: 426px;
@@ -479,139 +445,6 @@ hr {
   height: auto;
   border-radius: 5px;
 }
-
-/* Blog CSS- Sourav */
-/* .header-blog {
-  min-height: 1px;
-  position: relative;
-  background-color: #f4efec;
-  border: 1px solid #cfb9ab;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-
-  margin-left: 5px;
-  margin-right: 5px;
-  width: 100%;
-}
-
-.blog-ul {
-  text-align: center;
-  padding: 10px;
-  list-style: none;
-}
-
-.blog-ul li {
-  display: inline-block;
-  text-decoration: none;
-  color: #be863c !important;
-  background-color: transparent;
-  border-top: 1px solid transparent;
-  border-bottom: 1px solid #be863c;
-
-  padding: 30px;
-  padding: 5px 20px;
-  margin: 10px;
-}
-
-.image-height {
-  width: 100% !important;
-  max-width: unset !important;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-clip: border-box;
-  padding: 30px 0;
-  height: 80vh;
-}
-
-.top {
-  position: relative;
-}
-
-.second {
-  position: absolute;
-  top: 34vh;
-  left: 4.5vw;
-  right: 4.5vw;
-  text-align: center;
-  align-items: center;
-  font-size: 52px;
-  font-weight: bold;
-  font-family: Muli, sans-serif;
-  color: #ffffff;
-}
-
-.main-para {
-  padding-top: 10px;
-  text-align: justify;
-  padding-left: 70px;
-  padding-right: 70px;
-  font-family: Muli, sans-serif;
-  -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 2em;
-  color: #272727;
-}
-
-.lastPara {
-  text-align: center;
-}
-.image-setup {
-  background-image: url("./image4SecondBlogPage.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 320px;
-  width: 550px;
-
-  max-width: 100%;
-  border-radius: 5px;
-  margin-top: 40px;
-  margin-bottom: 50px;
-  margin-left: 50px;
-}
-.parabeforeImage {
-  text-align: justify;
-  padding-top: 20px;
-  padding-right: 30px;
-  font-family: Muli, sans-serif;
-  -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 2em;
-  color: #272727;
-  -webkit-text-size-adjust: 100%;
-  font-size: 14.5px;
-  width: 100%;
-  max-width: 1340px;
-  margin-bottom: 50px;
-}
-
-.image-setup2 {
-  background-image: url("./image5SecondBlogPage.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 320px;
-  width: 570px;
-
-  max-width: 100%;
-  border-radius: 5px;
-  margin-top: 40px;
-  margin-bottom: 50px;
-  margin-left: 20px;
-}
-.parabeforeImage2 {
-  text-align: justify;
-  padding-top: 20px;
-  padding-left: 30px;
-  font-family: Muli, sans-serif;
-  -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 2em;
-  color: #272727;
-  -webkit-text-size-adjust: 100%;
-  font-size: 14.5px;
-  width: 100%;
-  max-width: 1340px;
-  margin-bottom: 50px;
-} */
-
 /* Partner with us */
 .head-partner-with-us h1 {
   font-size: 2em;
